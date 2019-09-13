@@ -17,39 +17,83 @@
         </ul>
         <ul>
           <li> <img src="cart-icon.svg" alt="Корзина"> </li>
-          <li> <a href="#"> корзина </a></li>
+          <li> <a href="#"> Корзина </a></li>
         </ul>
       </nav>
       </header>
       <main>
         <h1> Магазин готовых шаблонов </h1>
         <section>
-          <h2> Фильтр шаблонов </h2>
-          <h3> Стоимость </h3>
+          <h2 class="visually-hidden"> Фильтр шаблонов </h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <p>Стоимость:</p>
             <!-- Здесь будет оформлен бегунок со стоимостью -->
-            <h3> Сетка </h3>
+            <p>
+              <label for="appointment-from"> От </label>
+              <input id="appointment-from" type="text" name="from" value=""
+              placeholder="0">
+            </p>
+            <p>
+              <label for="appointment-to"> До </label>
+              <input id="appointment-to" type="text" name="to" value=""
+              placeholder="15 000">
+            </p>
+          </fieldset>
+          <fieldset>
+         <legend> Сетка: </legend>
           <ul>
-            <li> Адаптивная </li>
-            <li> Фиксированная </li>
-            <li> Резиновая </li>
+            <li>
+              <input type="radio" name="setka" value="adapt" id="filter-adapt"
+              checked>
+              <label for="filter-adapt"> Адаптивная </label>
+            </li>
+            <li>
+              <input type="radio" name="setka" value="fix" id="filter-fix">
+              <label for="filter-fix"> Фиксированная </label>
+             </li>
+            <li>
+              <input type="radio" name="setka" value="rez" id="filter-rez">
+              <label for="filter-rez"> Резиновая </label>
+             </li>
           </ul>
-          <h3> Особенности </h3>
+        </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
           <ul>
-            <li> Слайдер </li>
-            <li> Блок преимуществ </li>
-            <li> Новости </li>
-            <li> Галерея </li>
-            <li> Корзина </li>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider"> Слайдер </label>
+            </li>
+            <li>
+              <input type="checkbox" name="advantage-block"
+              id="filter-advantage-block">
+              <label for="filter-advantage-block">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+             </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery"> Галерея </label>
+              </li>
+            <li>
+              <input type="checkbox" name="Korzina" id="filter-korzina">
+                <label for="filter-korzina"> Корзина </label>
+            </li>
           </ul>
-          <button type="button"> Показать </button>
+        </fieldset>
+          <button type="submit"> Показать </button>
+          </form>
         </section>
         <section>
-          <h2> Список готовых шаблонов </h2>
-          <p> сортировать: </p>
+          <h2 class="visually-hidden"> Список готовых шаблонов </h2>
+          <p> Сортировать: </p>
           <ul>
-            <li> по цене </li>
-            <li> по типу </li>
-            <li> по названию </li>
+            <li> <button type="button"> По цене </button></li>
+            <li> <button type="button"> По типу </button></li>
+            <li> <button type="button"> По названию </button></li>
           </ul>
 
           <ul>
@@ -121,26 +165,30 @@
           <button type="button"> 3 </button>
         </li>
         <li>
-          <button type="button"> следующая </button>
+          <button type="button"> Следующая </button>
         </li>
       </ul>
         </section>
         <section>
-          <h2>Как нас найти </h2>
+          <h2 class="visually-hidden"> Как нас найти </h2>
           <p> NЁRDS DESIGN STUDIO </p>
           <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
           <p> тел. +7 (812) 275-75-75 </p>
           <a href="#"> Напишите нам </a>
-          <img src="map.png" alt="Карта">
-          <img src="map-marker.svg" alt="Наше месторасположение на карте">
+          <img src="map.png" alt="Карта Санкт-Петербурга">
+          <img src="map-marker.png" alt="Наше месторасположение на карте -
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </section>
       </main>
       <footer>
         <div>
           <ul>
-            <li> <a href="#"> <img src="vk-icon.svg" alt="Вконтакте"> </a> </li>
-            <li> <a href="#"> <img src="fb-icon.svg" alt="Facebook"> </a> </li>
-            <li> <a href="#"> <img src="insta-icon.svg" alt="Instagram"></a> </li>
+            <li> <a href="#"> <img src="vk-icon.svg"
+              alt="Nerd's во Вконтакте"> </a> </li>
+            <li> <a href="#"> <img src="fb-icon.svg"
+              alt="Nerd's в Facebook"> </a> </li>
+            <li> <a href="#"> <img src="insta-icon.svg"
+              alt="Nerd's в Instagram"></a> </li>
             </ul>
           </div>
             <p> Давайте дружить, это выгодно! </p>
