@@ -2,47 +2,53 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+     <title>HTML Academy: Нёрдс</title>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
-        <a href="index.html"><img src="nerds-logo.svg" alt="Логотип Nerd's">
-          </a>
-        <ul>
-          <li> <a href="#"> Студия </a></li>
-          <li> <a href="#"> Клиенты </a></li>
-          <li> <a href="catalog.html"> Магазин </a></li>
-          <li> <a href="#"> Контакты </a></li>
-        </ul>
-        <ul>
-          <li> <img src="cart-icon.svg" alt="Корзина"> </li>
-          <li> <a href="#"> Корзина </a></li>
-        </ul>
+      <a href="index.html"><img src="nerds-logo.svg" alt="Логотип Nerd's">
+      </a>
+      <div class="navigation">
+      <ul>
+        <li> <a href="#"> Студия </a></li>
+        <li> <a href="#">Клиенты </a></li>
+        <li> <a href="catalog.html"> Магазин </a></li>
+        <li> <a href="#">Контакты </a></li>
+      </ul>
+      <ul>
+        <li> <img src="cart-icon.svg" alt="Корзина"> </li>
+        <li> <a href="#"> Корзина </a></li>
+      </ul>
+      </div>
       </nav>
-      </header>
+    </header>
       <main>
         <h1> Магазин готовых шаблонов </h1>
         <section>
           <h2 class="visually-hidden"> Фильтр шаблонов </h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <p>Стоимость:</p>
+            <p class="header"> Стоимость: </p>
             <!-- Здесь будет оформлен бегунок со стоимостью -->
-            <p>
+            <p class="points">
               <label for="appointment-from"> От </label>
               <input id="appointment-from" type="text" name="from" value=""
               placeholder="0">
             </p>
-            <p>
+            <p class="points">
               <label for="appointment-to"> До </label>
               <input id="appointment-to" type="text" name="to" value=""
               placeholder="15 000">
             </p>
           </fieldset>
           <fieldset>
-         <legend> Сетка: </legend>
-          <ul>
+         <legend class="header"> Сетка: </legend>
+          <ul class="points">
             <li>
               <input type="radio" name="setka" value="adapt" id="filter-adapt"
               checked>
@@ -59,8 +65,8 @@
           </ul>
         </fieldset>
           <fieldset>
-            <legend>Особенности:</legend>
-          <ul>
+            <legend class="header">Особенности:</legend>
+          <ul class="points">
             <li>
               <input type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider"> Слайдер </label>
@@ -84,13 +90,13 @@
             </li>
           </ul>
         </fieldset>
-          <button type="submit"> Показать </button>
+          <button type="submit" class="button4"> Показать </button>
           </form>
         </section>
         <section>
           <h2 class="visually-hidden"> Список готовых шаблонов </h2>
-          <p> Сортировать: </p>
-          <ul>
+          <p class="filter"> Сортировать: </p>
+          <ul class="filter-options">
             <li> <button type="button"> По цене </button></li>
             <li> <button type="button"> По типу </button></li>
             <li> <button type="button"> По названию </button></li>
@@ -98,10 +104,10 @@
 
           <ul>
             <li>
-           <h3>Sedona</h3>
+           <h3 class="studio">Sedona</h3>
             <p> Информационный сайт для туристов </p>
             <a href=""><img src="img-sedona.jpg" alt="Sedona"></a>
-            <button type="button"> 9 900 РУБ. </button>
+            <button type="button" class="button"> 9 900 РУБ. </button>
             <div>
               <button type="button"> Закрыть </button>
               <button type="button"> Развернуть </button>
@@ -155,26 +161,26 @@
         </li>
       </ul>
       <ul>
-        <li>
-          <button type="button"> 1 </button>
+        <li class="pages">
+          <button type="button" class="button4"> 1 </button>
         </li>
         <li>
-          <button type="button"> 2 </button>
+          <button type="button" class="button4"> 2 </button>
         </li>
         <li>
-          <button type="button"> 3 </button>
+          <button type="button" class="button4"> 3 </button>
         </li>
         <li>
-          <button type="button"> Следующая </button>
+          <button type="button" class="button4"> Следующая </button>
         </li>
       </ul>
         </section>
         <section>
           <h2 class="visually-hidden"> Как нас найти </h2>
-          <p> NЁRDS DESIGN STUDIO </p>
-          <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-          <p> тел. +7 (812) 275-75-75 </p>
-          <a href="#"> Напишите нам </a>
+          <p class="studio"> NЁRDS DESIGN STUDIO </p>
+          <p  class="adress"> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+          <p  class="adress"> тел. +7 (812) 275-75-75 </p>
+          <a href="#" class="button"> Напишите нам </a>
           <img src="map.png" alt="Карта Санкт-Петербурга">
           <img src="map-marker.png" alt="Наше месторасположение на карте -
           191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
@@ -182,18 +188,18 @@
       </main>
       <footer>
         <div>
-          <ul>
-            <li> <a href="#"> <img src="vk-icon.svg"
-              alt="Nerd's во Вконтакте"> </a> </li>
-            <li> <a href="#"> <img src="fb-icon.svg"
-              alt="Nerd's в Facebook"> </a> </li>
-            <li> <a href="#"> <img src="insta-icon.svg"
-              alt="Nerd's в Instagram"></a> </li>
-            </ul>
-          </div>
-            <p> Давайте дружить, это выгодно! </p>
-            <p> Скидки 10% для друзей из социальных сетей. </p>
-        </footer>
+      <ul class="media">
+        <li> <a href="#"> <img src="vk-icon.svg"
+          alt="Nerd's во Вконтакте"> </a> </li>
+        <li> <a href="#"> <img src="fb-icon.svg"
+          alt="Nerd's в Facebook"> </a> </li>
+        <li> <a href="#"> <img src="insta-icon.svg"
+          alt="Nerd's в Instagram"></a> </li>
+        </ul>
+      </div>
+        <p class="footer"> Давайте дружить, это выгодно! </p>
+        <p class="discounts"> Скидки 10% для друзей из социальных сетей. </p>
+      </footer>
 
 
   </body>
