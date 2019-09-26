@@ -10,8 +10,9 @@
   </head>
   <body>
     <header>
-      <nav>
-      <a href="index.html"><img src="nerds-logo.svg" alt="Логотип Nerd's">
+      <nav class="main-navigation">
+      <a href="index.html"><img src="nerds-logo.svg" alt="Логотип Nerd's"
+        class="logo-navigation">
       </a>
       <div class="navigation">
       <ul>
@@ -20,16 +21,17 @@
         <li> <a href="catalog.html"> Магазин </a></li>
         <li> <a href="#">Контакты </a></li>
       </ul>
-      <ul>
+      <ul class="navigation-2">
         <li> <img src="cart-icon.svg" alt="Корзина"> </li>
         <li> <a href="#"> Корзина </a></li>
       </ul>
       </div>
       </nav>
     </header>
-      <main>
-        <h1> Магазин готовых шаблонов </h1>
-        <section>
+      <main class="container">
+        <h1 class="main-title"> Магазин готовых шаблонов </h1>
+        <div class="main-body">
+        <section class="filters">
           <h2 class="visually-hidden"> Фильтр шаблонов </h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
@@ -93,7 +95,9 @@
           <button type="submit" class="button4"> Показать </button>
           </form>
         </section>
+        <div class="main-catalog">
         <section>
+          <div class= "filters-2">
           <h2 class="visually-hidden"> Список готовых шаблонов </h2>
           <p class="filter"> Сортировать: </p>
           <ul class="filter-options">
@@ -101,7 +105,8 @@
             <li> <button type="button"> По типу </button></li>
             <li> <button type="button"> По названию </button></li>
           </ul>
-
+        </div>
+        <div class="catalog">
           <ul>
             <li>
            <h3 class="studio">Sedona</h3>
@@ -160,6 +165,7 @@
           </div>
         </li>
       </ul>
+    </div>
       <ul>
         <li class="pages">
           <button type="button" class="button4"> 1 </button>
@@ -175,18 +181,20 @@
         </li>
       </ul>
         </section>
-        <section>
-          <h2 class="visually-hidden"> Как нас найти </h2>
-          <p class="studio"> NЁRDS DESIGN STUDIO </p>
-          <p  class="adress"> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-          <p  class="adress"> тел. +7 (812) 275-75-75 </p>
-          <a href="#" class="button"> Напишите нам </a>
-          <img src="map.png" alt="Карта Санкт-Петербурга">
-          <img src="map-marker.png" alt="Наше месторасположение на карте -
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        </section>
+      </div>
+    </div>
+    <section class="map-part">
+      <h2 class="visually-hidden"> Как нас найти </h2>
+      <p class="studio"> NЁRDS DESIGN STUDIO </p>
+      <p  class="adress"> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+      <p  class="adress"> тел. +7 (812) 275-75-75 </p>
+      <a href="#" class="button"> Напишите нам </a>
+      <img src="map.png" alt="Карта Санкт-Петербурга">
+      <img src="map-marker.png" alt="Наше месторасположение на карте -
+      191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    </section>
       </main>
-      <footer>
+      <footer class="footer-part">
         <div>
       <ul class="media">
         <li> <a href="#"> <img src="vk-icon.svg"
@@ -197,9 +205,12 @@
           alt="Nerd's в Instagram"></a> </li>
         </ul>
       </div>
+      <div class="media-2">
         <p class="footer"> Давайте дружить, это выгодно! </p>
         <p class="discounts"> Скидки 10% для друзей из социальных сетей. </p>
+      </div>
       </footer>
+
 
 
   </body>
