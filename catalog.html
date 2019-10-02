@@ -9,209 +9,210 @@
       rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="main-navigation">
-      <a href="index.html"><img src="nerds-logo.svg" alt="Логотип Nerd's"
-        class="logo-navigation">
-      </a>
-      <div class="navigation">
-      <ul>
-        <li> <a href="#"> Студия </a></li>
-        <li> <a href="#">Клиенты </a></li>
-        <li> <a href="catalog.html"> Магазин </a></li>
-        <li> <a href="#">Контакты </a></li>
-      </ul>
-      <ul class="navigation-2">
-        <li> <img src="cart-icon.svg" alt="Корзина"> </li>
-        <li> <a href="#"> Корзина </a></li>
-      </ul>
-      </div>
-      </nav>
-    </header>
-      <main class="container">
+    <div class="container">
+     <header>
+       <nav class="main-navigation">
+         <a href="index.html"> <img  src="img/nerds-logo.svg" width="160" height="67"
+        alt="Логотип Nerd's" class="logo-navigation"> </a>
+         <ul class="navigation">
+           <li> <a href="#"> Студия </a></li>
+           <li> <a href="#"> Клиенты </a></li>
+           <li> <a href="catalog.html"> Магазин </a></li>
+           <li> <a href="#"> Контакты </a></li>
+         </ul>
+         <ul class="navigation-2">
+           <li> <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина"> </li>
+           <li> <a href="#"> Корзина </a></li>
+         </ul>
+       </nav>
+     </header>
+     <main>
         <h1 class="main-title"> Магазин готовых шаблонов </h1>
         <div class="main-body">
         <section class="filters">
-          <h2 class="visually-hidden"> Фильтр шаблонов </h2>
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <p class="header"> Стоимость: </p>
+           <h2 class="visually-hidden"> Фильтр шаблонов </h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+           <fieldset>
+             <p class="header"> Стоимость: </p>
             <!-- Здесь будет оформлен бегунок со стоимостью -->
-            <p class="points">
-              <label for="appointment-from"> От </label>
-              <input id="appointment-from" type="text" name="from" value=""
+             <p class="points">
+               <label for="appointment-from"> От </label>
+               <input id="appointment-from" type="text" name="from" value=""
               placeholder="0">
-            </p>
-            <p class="points">
-              <label for="appointment-to"> До </label>
-              <input id="appointment-to" type="text" name="to" value=""
+             </p>
+             <p class="points">
+               <label for="appointment-to"> До </label>
+               <input id="appointment-to" type="text" name="to" value=""
               placeholder="15 000">
-            </p>
+             </p>
           </fieldset>
           <fieldset>
-         <legend class="header"> Сетка: </legend>
-          <ul class="points">
-            <li>
-              <input type="radio" name="setka" value="adapt" id="filter-adapt"
-              checked>
-              <label for="filter-adapt"> Адаптивная </label>
-            </li>
-            <li>
-              <input type="radio" name="setka" value="fix" id="filter-fix">
-              <label for="filter-fix"> Фиксированная </label>
-             </li>
-            <li>
-              <input type="radio" name="setka" value="rez" id="filter-rez">
-              <label for="filter-rez"> Резиновая </label>
-             </li>
-          </ul>
+            <legend class="header"> Сетка: </legend>
+              <ul class="points">
+                <li>
+                <input type="radio" name="setka" value="adapt" id="filter-adapt"
+                checked>
+                <label for="filter-adapt"> Адаптивная </label>
+               </li>
+               <li>
+               <input type="radio" name="setka" value="fix" id="filter-fix">
+               <label for="filter-fix"> Фиксированная </label>
+               </li>
+               <li>
+               <input type="radio" name="setka" value="rez" id="filter-rez">
+               <label for="filter-rez"> Резиновая </label>
+               </li>
+            </ul>
         </fieldset>
-          <fieldset>
-            <legend class="header">Особенности:</legend>
-          <ul class="points">
-            <li>
-              <input type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider"> Слайдер </label>
-            </li>
-            <li>
-              <input type="checkbox" name="advantage-block"
-              id="filter-advantage-block">
-              <label for="filter-advantage-block">Блок преимуществ</label>
-            </li>
-            <li>
-              <input type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
-             </li>
-            <li>
-              <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery"> Галерея </label>
+        <fieldset>
+          <legend class="header">Особенности:</legend>
+            <ul class="points">
+              <li>
+               <input type="checkbox" name="slider" id="filter-slider" checked>
+               <label for="filter-slider"> Слайдер </label>
               </li>
-            <li>
-              <input type="checkbox" name="Korzina" id="filter-korzina">
-                <label for="filter-korzina"> Корзина </label>
-            </li>
-          </ul>
+              <li>
+               <input type="checkbox" name="advantage-block"
+               id="filter-advantage-block">
+               <label for="filter-advantage-block">Блок преимуществ</label>
+              </li>
+              <li>
+               <input type="checkbox" name="news" id="filter-news" checked>
+               <label for="filter-news">Новости</label>
+             </li>
+             <li>
+               <input type="checkbox" name="gallery" id="filter-gallery">
+               <label for="filter-gallery"> Галерея </label>
+              </li>
+              <li>
+               <input type="checkbox" name="Korzina" id="filter-korzina">
+               <label for="filter-korzina"> Корзина </label>
+              </li>
+           </ul>
         </fieldset>
-          <button type="submit" class="button4"> Показать </button>
-          </form>
-        </section>
-        <div class="main-catalog">
-        <section>
-          <div class= "filters-2">
-          <h2 class="visually-hidden"> Список готовых шаблонов </h2>
-          <p class="filter"> Сортировать: </p>
+          <button type="submit" class="button-5"> Показать </button>
+       </form>
+     </section>
+     <div class="main-catalog">
+     <section>
+      <div class= "filters-2">
+      <h2 class="visually-hidden"> Список готовых шаблонов </h2>
+       <p class="filter"> Сортировать: </p>
           <ul class="filter-options">
             <li> <button type="button"> По цене </button></li>
             <li> <button type="button"> По типу </button></li>
             <li> <button type="button"> По названию </button></li>
           </ul>
-        </div>
-        <div class="catalog">
+      </div>
+      <div class="catalog">
           <ul>
             <li>
-           <h3 class="studio">Sedona</h3>
-            <p> Информационный сайт для туристов </p>
-            <a href=""><img src="img-sedona.jpg" alt="Sedona"></a>
-            <button type="button" class="button"> 9 900 РУБ. </button>
-            <div>
+             <h3 class="studio">Sedona</h3>
+             <p> Информационный сайт для туристов </p>
+             <a href=""><img src="img/img-sedona.jpg" width="360" height="576"
+                alt="Sedona"></a>
+             <button type="button" class="button"> 9 900 РУБ. </button>
+             <div>
               <button type="button"> Закрыть </button>
               <button type="button"> Развернуть </button>
               <button type="button"> Свернуть </button>
             </div>
           </li>
           <li>
-          <h3>Pink</h3>
-          <a href=""><img src="img-pink.jpg" alt="Pink"></a>
-          <div>
+           <h3>Pink</h3>
+           <a href=""><img src="img/img-pink.jpg" width="360" height="576"
+             alt="Pink"></a>
+           <div>
             <button type="button"> Закрыть </button>
             <button type="button"> Развернуть </button>
             <button type="button"> Свернуть </button>
-          </div>
+           </div>
+         </li>
+         <li>
+           <h3> Bordinski </h3>
+           <a href=""><img src="img/img-barbershop.jpg" width="360" height="576"
+             alt="Borodinski"></a>
+           <div>
+            <button type="button"> Закрыть </button>
+            <button type="button"> Развернуть </button>
+            <button type="button"> Свернуть </button>
+           </div>
+         </li>
+         <li>
+           <h3> Mishka </h3>
+           <a href=""><img src="img/mishka.jpg" width="360" height="576"
+              alt="Mishka"></a>
+           <div>
+            <button type="button"> Закрыть </button>
+            <button type="button"> Развернуть </button>
+            <button type="button"> Свернуть </button>
+           </div>
         </li>
         <li>
-          <h3> Bordinski </h3>
-          <a href=""><img src="img-barbershop.jpg" alt="Borodinski"></a>
-          <div>
+           <h3> A+ </h3>
+           <a href=""><img src="img/img-aplus" width="360" height="576"
+             alt="Aplus"></a>
+           <div>
             <button type="button"> Закрыть </button>
             <button type="button"> Развернуть </button>
             <button type="button"> Свернуть </button>
-          </div>
+           </div>
+         </li>
+         <li>
+           <h3> КВАСТ </h3>
+           <a href=""><img src="img/img-kvast.jpg" width="360" height="576"
+              alt="Kvast"></a>
+           <div>
+            <button type="button"> Закрыть </button>
+            <button type="button"> Развернуть </button>
+            <button type="button"> Свернуть </button>
+           </div>
+         </li>
+      </ul>
+     </div>
+      <ul class="pages">
+        <li>
+          <button type="button" class="button-4"> 1 </button>
         </li>
         <li>
-          <h3> Mishka </h3>
-          <a href=""><img src="mishka.jpg" alt="Mishka"></a>
-          <div>
-            <button type="button"> Закрыть </button>
-            <button type="button"> Развернуть </button>
-            <button type="button"> Свернуть </button>
-          </div>
+          <button type="button" class="button-4"> 2 </button>
         </li>
         <li>
-          <h3> A+ </h3>
-          <a href=""><img src="img-aplus" alt="Aplus"></a>
-          <div>
-            <button type="button"> Закрыть </button>
-            <button type="button"> Развернуть </button>
-            <button type="button"> Свернуть </button>
-          </div>
+          <button type="button" class="button-4"> 3 </button>
         </li>
         <li>
-          <h3> КВАСТ </h3>
-          <a href=""><img src="img-kvast.jpg" alt="Kvast"></a>
-          <div>
-            <button type="button"> Закрыть </button>
-            <button type="button"> Развернуть </button>
-            <button type="button"> Свернуть </button>
-          </div>
+          <button type="button" class="button-5"> Следующая </button>
         </li>
       </ul>
+    </section>
     </div>
-      <ul>
-        <li class="pages">
-          <button type="button" class="button4"> 1 </button>
-        </li>
-        <li>
-          <button type="button" class="button4"> 2 </button>
-        </li>
-        <li>
-          <button type="button" class="button4"> 3 </button>
-        </li>
-        <li>
-          <button type="button" class="button4"> Следующая </button>
-        </li>
-      </ul>
-        </section>
-      </div>
     </div>
     <section class="map-part">
-      <h2 class="visually-hidden"> Как нас найти </h2>
-      <p class="studio"> NЁRDS DESIGN STUDIO </p>
-      <p  class="adress"> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-      <p  class="adress"> тел. +7 (812) 275-75-75 </p>
-      <a href="#" class="button"> Напишите нам </a>
-      <img src="map.png" alt="Карта Санкт-Петербурга">
-      <img src="map-marker.png" alt="Наше месторасположение на карте -
-      191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-    </section>
-      </main>
-      <footer class="footer-part">
-        <div>
-      <ul class="media">
-        <li> <a href="#"> <img src="vk-icon.svg"
-          alt="Nerd's во Вконтакте"> </a> </li>
-        <li> <a href="#"> <img src="fb-icon.svg"
-          alt="Nerd's в Facebook"> </a> </li>
-        <li> <a href="#"> <img src="insta-icon.svg"
-          alt="Nerd's в Instagram"></a> </li>
+         <h2 class="visually-hidden"> Как нас найти </h2>
+         <p class="studio"> NЁRDS DESIGN STUDIO </p>
+         <p  class="address"> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+         <p  class="address"> тел. +7 (812) 275-75-75 </p>
+         <a href="#" class="button"> Напишите нам </a>
+         <img src="img/map.png" width="1442" height="418" alt="Карта Санкт-Петербурга">
+         <img src="img/map-marker.png" width="231" height="190"
+         alt="Наше месторасположение на карте - 191186, Санкт-Петербург,
+         ул. Б. Конюшенная, д. 19/8">
+     </section>
+    </main>
+    <footer class="footer-part">
+        <ul class="media">
+          <li> <a href="#"> <img src="img/vk-icon.svg" width="81" height="81"
+            alt="Nerd's во Вконтакте"> </a> </li>
+          <li> <a href="#"> <img src="img/fb-icon.svg" width="81" height="81"
+            alt="Nerd's в Facebook"> </a> </li>
+          <li> <a href="#"> <img src="img/insta-icon.svg" width="81" height="81"
+            alt="Nerd's в Instagram"></a> </li>
         </ul>
-      </div>
       <div class="media-2">
         <p class="footer"> Давайте дружить, это выгодно! </p>
         <p class="discounts"> Скидки 10% для друзей из социальных сетей. </p>
       </div>
-      </footer>
-
-
-
+     </footer>
+   </div>
   </body>
 </html>

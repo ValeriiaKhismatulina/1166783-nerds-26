@@ -9,14 +9,14 @@ body {
  color: #283136;
 
  background-color: #ffffff;
- background-position: left;
+ background-position: center;
 }
 
 a {
  text-decoration: none;
 }
 
-.navigation {
+.main-navigation {
  font-size: 16px;
  line-height: 30px;
  color: #000000;
@@ -28,16 +28,16 @@ a {
  list-style: none;
 }
 
-.navigation a {
+.main-navigation a {
  color:#000000;
 }
 
-.navigation a:hover{
+.main-navigation a:hover{
  color: #fb565a;
 }
 
-.navigation a:focus {
- color: #bcbcbc;
+.main-navigation a:active {
+ color: #bdbdbd;
 }
 
 .nerds {
@@ -57,6 +57,12 @@ a {
  color: #ffffff;
  text-transform: uppercase;
  background-color: #fb565a;
+ width: 240px;
+ height: 50px;
+}
+
+.products {
+ list-style: none;
 }
 
 h3{
@@ -67,19 +73,21 @@ h3{
  color:#000000;
 }
 
-.button2 {
+.button-1 {
  font-size: 16px;
  line-height: 18px;
- color: #fb565a;
+ color: #ffffff;
  text-transform: uppercase;
+ background-color: #fb565a;
+ width: 160px;
+ height: 50px;
+}
+
+.button-2 {
  background-color: #00ca74;
 }
 
-.button3 {
- font-size: 16px;
- line-height: 18px;
- color: #fb565a;
- text-transform: uppercase;
+.button-3 {
  background-color: #efc849;
 }
 
@@ -127,7 +135,11 @@ h3{
  color: #000000;
 }
 
-.adress {
+.our-projects {
+ list-style: none;
+}
+
+.address {
  font-size: 16px;
  line-height: 18px;
  color: #666666;
@@ -151,11 +163,15 @@ h3{
  color: #444444;
 }
 
-h1 {
+/* CSS/Catalog*/
+
+
+.main-title {
  font-size: 55px;
  line-height: 55px;
  color: #444444;
  text-align: center;
+ background-color: #eeeeee;
 }
 
 .header{
@@ -173,12 +189,24 @@ h1 {
  list-style: none;
 }
 
-.button4 {
+.button-4 {
  font-size: 16px;
  line-height: 18px;
- color: #000000;
+ color: #ffffff;
  text-transform: uppercase;
  background-color: #eeeeee;
+ width: 50px;
+ height: 50px;
+}
+
+.button-5 {
+ font-size: 16px;
+ line-height: 18px;
+ color: #ffffff;
+ text-transform: uppercase;
+ background-color: #eeeeee;
+ width: 260px;
+ height: 50px;
 }
 
 .filter{
@@ -199,158 +227,213 @@ h1 {
  list-style:none;
 }
 
+
 /* Сетка*/
 
 html, body {
-  min-height: 2476px;
-  min-height: 1440px;
-}
-
-header {
-  margin-bottom: 150px;
-}
-
-.main-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  max-height: 65px;
-}
-
-.logo-navigation {
-  width: 160px;
-  height: 67px;
-
-}
-
-.navigation {
-  margin: 0;
-  padding: 0;
-  width: 450px;
-
-  list-style: none;
-}
-
-.navidation-2{
-  margin:0;
-  padding:0;
-  width:120px;
-}
-
-.nerds {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.products {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  margin: 0 ;
-  margin-bottom: 80px;
-  padding: 0;
-
-  list-style: none;
-}
-
-.item {
-  width: 350px;
-}
-
-.item-coumns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  margin-bottom: 60px;
-}
-
-.we {
-  width: 660px;
-}
-
-.we-2 {
-  width: 365px;
-}
-
-.our-projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.item-project {
-  width: 220px;
-}
-
-.map-part {
-  width: 1442px;
-  height: 418px;
-  margin: auto;
-  padding: 0;
-}
-
-.footer-part {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-height: 217px;
-  margin: auto;
-}
-
-.media {
-  width: 290px;
-  }
-
-.media-2 {
-  width: 570px;
+ min-height: 2476px;
+ min-height: 1440px;
 }
 
 .container {
-  width: 1160px;
-  min-height: 2125px;
+ width: 1160px;
+ margin: 0 auto;
+}
+
+.main-navigation {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ min-height: 125px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.logo-navigation {
+ width: 160px;
+ height: 67px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.navigation {
+ width: 442px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.navigation-2 {
+ width: 65px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.nerds {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ min-height: 413px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.advantages {
+ width: 400px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.nerds-2 {
+ width: 698px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+
+.products {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ min-height: 507px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.item {
+ width: 300px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.our-experience{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ min-height: 527px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.we {
+ width: 800px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.we-2 {
+ width: 360px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.our-projects {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ min-height: 180px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.item-1 {
+ width: 199px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.item-2 {
+ width: 209px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.item-3 {
+ width: 185px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.item-4 {
+ width: 173px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.map-part {
+ height: 418px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.footer-part {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ min-height: 216px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.media {
+ width: 260px;
+ margin: 0 auto;
+ padding: 0;
+  }
+
+.media-2 {
+ width: 560px;
+ margin: 0 auto;
+ padding: 0;
 }
 
 .main-title {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 150px;
-  width: 728px;
-  min-height: 46px;
+ height: 226px;
+ margin: 0 auto;
+ padding: 0;
 }
 
 .main-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ min-height: 2227px;
+ margin: 0 auto;
+ padding: 0;
 }
 
 .filters {
-  width: 270px;
-  min-height: 702px;
+ width: 260px;
+ margin: 0 auto;
+ padding: 0;
 
 }
+
 .main-catalog {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ min-height: 2227px;
+ margin: 0 auto;
+ padding: 0;
 }
 
 .filters-2 {
-  width: 760px;
-  min-height: 42px;
-  margin: auto;
-  padding: 0;
+ width: 769px;
+ min-height: 140px;
+ margin: 0 auto;
+ padding: 0;
 }
 
 .catalog {
-  width: 770px;
-  min-height: 1918px;
-  order: 2;
-  margin: 35px;
-  padding: 0;
+ width: 769px;
+ min-height: 1923px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.pages {
+ width: 454px;
+ min-height: 81px;
+ margin: 0 auto;
+ padding: 0;
 }
