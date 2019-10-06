@@ -366,6 +366,114 @@ html, body {
  padding: 0;
 }
 
+.web {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+
+ min-height: 507px;
+ width: 300px;
+ margin: 0 auto;
+ padding: 0;
+}
+
+.img-web {
+width: 300px;
+height: 146px;
+margin: 0 auto;
+margin-bottom: 22px;
+padding: 0;
+}
+
+.h-web {
+  width: 138px;
+  height: 28px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding: 0;
+}
+
+.t-web {
+  width: 245px;
+  height: 48px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  padding: 0;
+}
+
+.button-1 {
+  width: 160px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 507px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.img-app {
+  width: 300px;
+  height: 146px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  padding: 0;
+}
+.h-app {
+  width: 171px;
+  height: 28px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding: 0;
+}
+.t-app {
+  width: 245px;
+  height: 48px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  padding: 0;
+}
+
+.present {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 507px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.img-present {
+  width: 300px;
+  height: 146px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  padding: 0;
+}
+.h-present {
+  width: 172px;
+  height: 28px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding: 0;
+}
+
+.t-present {
+  width: 218px;
+  height: 48px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  padding: 0;
+}
+
 .our-experience{
  display: flex;
  flex-direction: row;
